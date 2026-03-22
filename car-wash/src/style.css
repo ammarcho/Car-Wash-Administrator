@@ -1,0 +1,16 @@
+@import "tailwindcss";
+
+@layer components {
+  .text-main {
+    font-family: 'Poppins', sans-serif;
+  }
+
+
+  .text-montserrat-sb {
+    font-family: 'Montserrat', sans-serif;
+  }
+
+  .text-montserrat-r {
+    font-family: 'Montserrat', sans-serif;
+  }
+}
