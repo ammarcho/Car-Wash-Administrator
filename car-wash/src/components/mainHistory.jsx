@@ -3,7 +3,7 @@ function ListHistory({history}){
     return(
         <div className="flex flex-col gap-3 text-white p-4 scroll-auto">
             {history.map(history=>(
-                <div className="grid grid-cols-7 border-[0.5px] border-gray-500 rounded-sm p-2 ">
+                <div className="grid grid-cols-8 border-[0.5px] border-gray-500 rounded-sm p-2 ">
                     <p className="flex items-center justify-center">{history.PK}</p>
                     <p className="flex items-center justify-center">{history.name}</p>
                     <p className="flex items-center justify-center">{history.plat}</p>
@@ -11,6 +11,7 @@ function ListHistory({history}){
                     <p className="flex items-center justify-center">{history.clock}</p>
                     <p className="flex items-center justify-center">{history.date}</p>
                     <p className="flex items-center justify-center">{history.package}</p>
+                    <div className="w-full h-full flex justify-center items-center"><p className="bg-blue-500 text-black text-montserrat-sb font-bold flex justify-center items-center rounded-sm w-[70%]">Completed</p></div>
                 </div>
             ))}
         </div>

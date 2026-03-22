@@ -16,7 +16,7 @@ function ListOrder({ordersFormatted}){
     return(
         <div className="flex flex-col gap-3 text-white p-4 h-full w-full scroll-auto">
             {ordersFormatted.map(order=>(
-                <div className="grid grid-cols-7 border-[0.5px] border-gray-500 rounded-sm p-2 scroll-auto">
+                <div className="grid grid-cols-8 border-[0.5px] border-gray-500 rounded-sm p-2 scroll-auto">
                     <p className="flex items-center justify-center">{order.PK}</p>
                     <p className="flex items-center justify-center">{order.name}</p>
                     <p className="flex items-center justify-center">{order.plat}</p>
@@ -24,6 +24,7 @@ function ListOrder({ordersFormatted}){
                     <p className="flex items-center justify-center">{order.clock}</p>
                     <p className="flex items-center justify-center">{order.date}</p>
                     <p className="flex items-center justify-center">{order.package}</p>
+                    <div className="w-full h-full flex justify-center items-center"><p className="bg-[#B8B8B8] text-black text-montserrat-sb font-bold flex justify-center items-center rounded-sm w-[70%]">Pending</p></div>
                 </div>
             ))}
         </div>

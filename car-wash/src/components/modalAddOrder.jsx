@@ -2,7 +2,7 @@ export function ModalAddOrder({setIsOpen,fetchAddOrder,error,setError}){
 
     function handleSubmit(e){
         e.preventDefault()
-        if(!e.target.carModel.value || !e.target.package.value || !e.target.package.value || !e.target.carPlate.value){
+        if(!e.target.carModel.value || !e.target.package.value || !e.target.package.value || !e.target.carPlate.value||!e.target.firstName.value || !e.target.lastName.value){
             setError("Please complete the form")
             return
         }
